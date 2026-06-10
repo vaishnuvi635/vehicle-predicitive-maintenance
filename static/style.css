@@ -1,0 +1,215 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+    padding:40px 0;
+}
+
+.container{
+    max-width:1200px;
+}
+
+.card{
+    border:none !important;
+    border-radius:25px !important;
+    background:rgba(255,255,255,0.97);
+    backdrop-filter:blur(15px);
+}
+
+/* Heading */
+
+h1{
+    font-weight:700;
+    color:#0f172a;
+}
+
+.text-muted{
+    font-size:15px;
+}
+
+/* Section Styling */
+
+.section-box{
+    background:#f8fafc;
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:10px;
+    transition:0.3s ease;
+    border:1px solid #e2e8f0;
+}
+
+.section-box:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.section-title{
+    color:#0f172a;
+    font-weight:600;
+    margin-bottom:20px;
+    border-left:5px solid #2563eb;
+    padding-left:12px;
+}
+
+/* Labels */
+
+.form-label{
+    font-weight:500;
+    color:#334155;
+}
+
+/* Inputs */
+
+.form-control,
+.form-select{
+    border-radius:12px;
+    border:1px solid #cbd5e1;
+    padding:12px;
+    transition:0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 0.25rem rgba(37,99,235,0.15);
+}
+
+/* Button */
+
+.btn-primary{
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    ) !important;
+
+    border:none !important;
+    border-radius:14px !important;
+    padding:14px 40px !important;
+    font-size:18px !important;
+    font-weight:600 !important;
+
+    transition:0.3s ease;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(37,99,235,0.35);
+}
+
+/* Result Cards */
+
+.result-card{
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.alert-danger{
+    border:none;
+    background:#fee2e2;
+    color:#991b1b;
+    border-radius:16px;
+}
+
+.alert-success{
+    border:none;
+    background:#dcfce7;
+    color:#166534;
+    border-radius:16px;
+}
+
+.alert-warning{
+    border:none;
+    background:#fef3c7;
+    color:#92400e;
+    border-radius:16px;
+}
+
+/* Analytics Cards */
+
+.card.shadow-sm{
+    border:none;
+    border-radius:18px;
+    transition:0.3s ease;
+}
+
+.card.shadow-sm:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+.card.shadow-sm h5{
+    color:#64748b;
+    font-size:15px;
+}
+
+.card.shadow-sm h3{
+    color:#0f172a;
+    font-weight:700;
+}
+
+/* Risk Colors */
+
+.text-danger{
+    font-weight:700;
+}
+
+.text-warning{
+    font-weight:700;
+}
+
+.text-success{
+    font-weight:700;
+}
+
+/* Recommendation Box */
+
+.alert{
+    padding:20px;
+}
+
+.alert ul{
+    margin-top:10px;
+    margin-bottom:0;
+}
+
+.alert li{
+    margin-bottom:8px;
+}
+
+/* Divider */
+
+hr{
+    margin:40px 0;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .card{
+        padding:20px !important;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    .section-title{
+        font-size:20px;
+    }
+}
