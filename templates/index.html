@@ -256,38 +256,37 @@
 
             <div class="mt-4">
 
-                {% if status == "danger" %}
+    {% if status == "danger" %}
 
-                <div class="alert alert-warning">
+        <div class="alert alert-warning">
 
-                    <h5>Recommended Actions</h5>
+            <h5>🔧 Recommended Actions</h5>
 
-                    <ul>
-                        <li>Schedule vehicle servicing immediately.</li>
-                        <li>Inspect brake system.</li>
-                        <li>Check tire wear and pressure.</li>
-                        <li>Inspect battery health.</li>
-                        <li>Review reported issues.</li>
-                    </ul>
+            <ul>
+                {% for item in recommendations %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
 
-                </div>
+        </div>
 
-                {% else %}
+    {% else %}
 
-                <div class="alert alert-success">
+        <div class="alert alert-success">
 
-                    <h5>Recommendation</h5>
+            <h5>✅ Recommendation</h5>
 
-                    <p>
-                        Your vehicle appears to be in good condition.
-                        Continue routine maintenance and periodic inspections.
-                    </p>
+            <ul>
+                {% for item in recommendations %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
 
-                </div>
+        </div>
 
-                {% endif %}
+    {% endif %}
 
-            </div>
+</div>
 
         </div>
 
